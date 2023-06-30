@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  flex-direction: column;
+  font-family: "Outfit", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+span {
+  font-weight: 100;
+  display: inline-block;
+  margin-left: 0.4rem;
+  color: white;
+}
+span:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+main.container {
+  max-width: 20rem;
+  min-height: 30rem;
+  margin: auto;
+  background-color: hsl(216, 50%, 16%);
+  padding: 1.3rem;
+  border-radius: 1.2rem;
+  color: hsl(216, 11%, 53%);
+  box-shadow: 0.1rem 1.3rem 0 0.8rem hsl(217, 49%, 12%);
+}
+main.container .image {
+  position: relative;
+  margin-bottom: 1.3rem;
+}
+main.container .image:hover {
+  cursor: pointer;
+}
+main.container .image:hover .extras {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main.container .image img {
+  border-radius: 1rem;
+}
+main.container .image .extras {
+  background-color: hsl(178, 100%, 50%);
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 1rem;
+  display: none;
+}
+main.container .image .extras img {
+  width: 3rem;
+}
+main.container h2 {
+  margin-bottom: 0.7rem;
+  color: white;
+}
+main.container h2:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+main.container > p:first-child {
+  margin-bottom: 1.3rem;
+  line-height: 1.4rem;
+  font-weight: 200;
+}
+main.container .price {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.3rem;
+  margin-bottom: 1.3rem;
+}
+main.container .price p:first-child {
+  color: hsl(178, 100%, 50%);
+}
+main.container .price p:first-child img {
+  width: 0.7rem;
+  height: 1.2rem;
+  margin-right: 0.3rem;
+  margin-bottom: -0.125rem;
+}
+main.container .price p:last-child img {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.3rem;
+  margin-bottom: -0.125rem;
+}
+main.container > p:last-child {
+  margin-bottom: 1.3rem;
+  border-top: 1px solid hsl(215, 32%, 27%);
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 0;
+  color: hsl(216, 11%, 53%);
+}
+main.container > p img {
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 1px solid hsl(215, 32%, 27%);
+  border-radius: 50%;
+  margin-right: 0.6rem;
+}
+
+footer.attribution {
+  font-size: 0.6rem;
+  text-align: center;
+  color: #b3afaf;
+}
+footer.attribution a {
+  color: hsl(0, 0%, 100%);
+}
